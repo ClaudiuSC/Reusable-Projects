@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fira+Sans&family=Roboto+Condensed&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem 2rem 1rem 2rem;
+    background-color: mediumblue;
+    color: white;
+    border-radius: 10px;
+}
+
+.profile-name {
+    font-size: 2.2rem;
+    line-height: 1;
+    padding: 1rem 0;
+}
+
+.profile-name::after {
+    content: '';
+    height: 2px;
+    width: 4rem;
+    background-color: #5bcbf0;
+    display: block;
+    margin: 2rem auto 0 auto;
+    opacity: .5;
+}
+
+.profile-position {
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: 2px;
+    margin: 1rem 0 1.5rem 0;
+    color: #5bcbf0;
+}
+
+.profile-body {
+    opacity: .9;
+    letter-spacing: .8px;
+}
+
+.social-list {
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: space-around;
+    width: 125px;
+}
+
+.social-link {
+    color: #5bcbf0;
+    font-size: 1.25rem;
+    opacity: .75;
+    transition: opacity .2s ease-in-out;
+}
+
+.social-link:hover,
+.social-link:focus {
+    opacity: 1;
+}
+
+.social-link:focus {
+    outline: none;
+}
+
+.profile-image {
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+/* 
+    styling for large screens
+*/
+
+@media (min-width: 600px) {
+    .card {
+        flex-direction: row;
+    }
+
+    .profile-sidebar {
+        margin: auto;
+    }
+
+    .profile-main {
+        text-align: left;
+        margin-left: 2rem;
+    }
+
+    .profile-name::after {
+        margin-left: 0;
+    }
+
+
+}
