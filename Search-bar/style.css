@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+body {
+    margin-top: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+}
+
+.search-container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.search-header {
+    display: flex;
+    background-color: orange;
+    padding: 20px;
+}
+
+.search-header label {
+    margin-right: 15px;
+}
+
+.search-list {
+    padding: 5px 10px;
+    background-color: royalblue;
+}
+
+.search-list ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-style {
+    background-color: #fff;
+    margin: 8px 0;
+    text-align: center;
+}
+
+#input-el {
+    /* padding: 0 30px; */
+    border: none;
+}
+
+#input-el:focus {
+   outline: none; 
+}
+
+
