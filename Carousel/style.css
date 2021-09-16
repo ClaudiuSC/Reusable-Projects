@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+img {
+    display: block;
+    width: 100%; 
+}
+
+
+/* carousel main */
+
+.carousel {
+    position: relative;
+    max-width: 600px;  
+}
+
+.carousel-item {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+
+/* carousel arrows */
+
+.carousel-actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.carousel-btn {
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #FFF;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    transition: color .2s ease-in-out;
+}
+
+.carousel-btn-next {
+    margin-right: 15px;
+}
+
+.carousel-btn-previous {
+    margin-left: 15px;
+}
+
+.carousel-btn:hover {
+    color: rgb(0, 255, 34);
+}
+
+/* animation */
+
+.animation {
+    animation: fadeVisibility .3s;
+
+}
+
+@keyframes fadeVisibility {
+    /* 0% {    opacity: 0;} */
+    25% {opacity: .25;}
+    50% {opacity: 0.5;}
+    75% {opacity: 0.75;}
+    100% {  opacity: 1;}
+}
+
+
+
+/*--------------------  test  --------------------*/
+
+/* .progress-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 30px;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: springgreen;
+    color: #fff;
+    transition: .3s easy;
+}
+
+.circle-active {
+    transform: scale(1.2);
+    background-color: red;
+} */
