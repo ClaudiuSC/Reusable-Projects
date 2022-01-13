@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: darkslateblue;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.show-notification {
+  border: none;
+  border-radius: 5px;
+  color: darkslateblue;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: inherit;
+}
+
+.show-notification:active {
+  transform: scale(.98);
+}
+
+.show-notification:focus {
+  outline: none;
+}
+
+.notification-area {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.notification-message {
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
