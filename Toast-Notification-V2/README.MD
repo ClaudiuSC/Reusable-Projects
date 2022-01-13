@@ -1,6 +1,6 @@
 A project from Brad Traversy's 50 Projects in 50 Days
 
-V1: a message appears when an event triggers which disappears after a couple of seconds(using setTimeout).
+V1: a message appears when an event triggers and then disappears after a couple of seconds(using setTimeout and Elem.remove()).
 
 V2: the message features a close button which makes it disappear when clicked.
 
