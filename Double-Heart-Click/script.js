@@ -1,10 +1,10 @@
 const loveMe = document.querySelector(".loveMe")
 const times = document.querySelector("#times")
-let i = 1
+let i = 0
 
 loveMe.addEventListener("dblclick", (e) => {
     createHeart(e)
-    times.textContent = i++
+    times.textContent = ++i
 })
 
 function createHeart(e) {
@@ -32,7 +32,7 @@ function createHeart(e) {
 //     } else {
 //         if (new Date().getTime() - clickTime < 500) {
 //             createHeart(e)
-//             times.textContent = i++
+//             times.textContent = ++i
 //             clickTime = 0
 //         } else {
 //             clickTime = new Date().getTime()
