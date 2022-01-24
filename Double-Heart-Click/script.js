@@ -33,6 +33,7 @@ function createHeart(e) {
 //         if (new Date().getTime() - clickTime < 500) {
 //             createHeart(e)
 //             times.textContent = i++
+//             clickTime = 0
 //         } else {
 //             clickTime = new Date().getTime()
 //         }
